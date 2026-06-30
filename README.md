@@ -19,19 +19,5 @@ Proje, modern web teknolojileri ile ileri düzey yapay zeka/veri yönetimi araç
 * **Frontend:** HTML5, CSS3, JavaScript (Figma tabanlı responsive tasarım)
 * **Veri Seti:** Bölgesel turizm ve sürdürülebilirlik verilerini içeren özelleştirilmiş veri havuzu
 
-## Proje Yapısı
+<img width="760" height="378" alt="image" src="https://github.com/user-attachments/assets/edf06703-95c3-4cb2-8b0a-37ea3f711031" />
 
-gezirota/
-│
-├── data_fetcher/          # Yapay zeka ve veri işleme motoru
-│   ├── app.py             # Backend API ve ana sunucu kontrolü
-│   ├── chatbot.py         # Hibrit RAG ve Gemini entegrasyonu
-│   └── build_db.py        # Veritabanı vektör indeksleme süreçleri
-│
-├── frontend/              # Kullanıcı arayüzü bileşenleri
-│   ├── index.html         # Ana sayfa
-│   ├── app.js             # Dinamik arayüz yönetimi
-│   └── style.css          # Görsel tasarım ve stil dosyaları
-│
-├── migrations/            # Veritabanı göç ve şema yönetim dosyaları
-└── .env.example           # Güvenli çevre değişkenleri şablonu
