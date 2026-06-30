@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Türkiye Gezi Rota Asistanı</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="logo-wrap">
+          <div class="logo-icon" aria-hidden="true">✈</div>
+          <div class="logo-text">
+            <span>GEZİ</span>
+            <span>ASİSTANIM</span>
+          </div>
+        </div>
+
+        <nav class="category-nav">
+          <ul class="nav-menu">
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Antik Kentler & Ören Yerleri</a>
+              <div class="dropdown-content">
+                <a href="/kesfet?kategori=antik-kent">Antik Kent</a>
+                <a href="/kesfet?kategori=kale">Kale</a>
+                <a href="/kesfet?kategori=tiyatro">Tiyatro</a>
+                <a href="/kesfet?kategori=anit">Anıt</a>
+              </div>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Tarihi Yapılar</a>
+              <div class="dropdown-content">
+                <a href="/kesfet?kategori=kule">Kule</a>
+                <a href="/kesfet?kategori=saat-kulesi">Saat Kulesi</a>
+                <a href="/kesfet?kategori=kopru">Köprü</a>
+                <a href="/kesfet?kategori=hamam">Hamam</a>
+                <a href="/kesfet?kategori=cami">Cami</a>
+                <a href="/kesfet?kategori=kilise">Kilise</a>
+                <a href="/kesfet?kategori=sinagog">Sinagog</a>
+              </div>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Müzeler & Sanat</a>
+              <div class="dropdown-content">
+                <a href="/kesfet?kategori=muze">Müze</a>
+                <a href="/kesfet?kategori=sanat-galerisi">Sanat Galerisi</a>
+                <a href="/kesfet?kategori=kutuphane">Kütüphane</a>
+              </div>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Doğa & Milli Parklar</a>
+              <div class="dropdown-content">
+                <a href="/kesfet?kategori=gol">Göl</a>
+                <a href="/kesfet?kategori=orman">Orman</a>
+                <a href="/kesfet?kategori=milli-park">Milli Park</a>
+                <a href="/kesfet?kategori=kanyon">Şelale</a>
+                <a href="/kesfet?kategori=piknik-alani">Piknik Alanı</a>
+                <a href="/kesfet?kategori=kamp-alani">Kamp Alanı</a>
+                <a href="/kesfet?kategori=botanik-bahcesi">Botanik Bahçesi</a>
+                <a href="/kesfet?kategori=hayvan-bahcesi">Hayvanat Bahçesi</a>
+                <a href="/kesfet?kategori=akvaryum">Akvaryum</a>
+              </div>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Sahil</a>
+              <div class="dropdown-content">
+                <a href="/kesfet?kategori=plaj">Plaj</a>
+              </div>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Lezzet Rotaları</a>
+              <div class="dropdown-content">
+                <a href="/kesfet?kategori=restoran">Restoran</a>
+                <a href="/kesfet?kategori=kafe">Kafe</a>
+                <a href="/kesfet?kategori=meyhane">Meyhane</a>
+                <a href="/kesfet?kategori=pastane">Pastane</a>
+                <a href="/kesfet?kategori=cay-bahcesi">Çay Bahçesi</a>
+                <a href="/kesfet?kategori=yoresel-urun">Yöresel Ürün Noktası</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="top-nav">
+          <button id="themeToggle" class="theme-toggle" aria-label="Temayı değiştir">
+            <span aria-hidden="true">☀</span>
+            <span aria-hidden="true">☾</span>
+          </button>
+        </nav>
+      </header>
+
+      <main class="layout-centered">
+        <section class="chat-container">
+          <div class="chat-header">
+            <h1 class="chat-title">Nereye gitmek istersin?</h1>
+          </div>
+
+          <div id="chatWindow" class="chat-window">
+            <div class="bubble assistant">Merhaba! Türkiye'de hangi bölgeyi keşfetmek istiyorsun? Öğrenci bütçesine uygun kamp rotalarından, lüks butik otel tatillerine kadar her şeyi planlayabiliriz.</div>
+          </div>
+
+          <form id="chatForm" class="chat-form">
+            <input
+              id="chatInput"
+              type="text"
+              placeholder="Örn: Ege'de 3 günlük antik kent rotası..."
+              aria-label="Mesaj alanı"
+              required
+              autocomplete="off"
+            />
+            <button type="submit">Rota Çiz</button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
